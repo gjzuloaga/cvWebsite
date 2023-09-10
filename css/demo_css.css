@@ -1,0 +1,387 @@
+/* Apply the background image to the navigation bar */
+nav {
+  margin: 0;
+  background-image: url('../Images/blackBackground.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: right;
+  padding: 15px;
+  display: flex;
+  justify-content: flex-end; /* Justify children to the right */
+
+
+}
+
+
+nav a {
+  color: white; /* Set the link text color to white or any desired color */
+  text-decoration: none; 
+  float: right;
+  padding-left: 25px;
+  position: relative;
+ 
+ 
+}
+
+nav a.MyProjects {
+  float: right;
+}
+
+nav a.MyProjects,a {
+  margin-top: -10px;
+}
+
+nav img {
+  
+  float: left; /* Add margin to create spacing between the image and other content */
+  margin-right:1150px ;
+  height: auto; /* Maintain aspect ratio */
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
+
+nav a:hover {
+ 
+  color: blue; 
+}
+
+
+  body {
+    margin: 0;
+   
+   
+  }
+
+
+
+body h1,h2,img {
+  margin-left: 20px
+}
+
+nav a:hover::before {
+  content: ""; 
+  position: absolute; 
+  top: -3px; 
+  left: 17px; 
+  right: -5px; 
+  bottom: -3px; 
+  border: 3px solid white; 
+  border-radius: 0%; 
+  pointer-events: none; 
+}
+
+footer {
+  background-color: #20B2AA;
+  display: flex;
+  justify-content: center; /* Justify children to the right */
+  align-items: center;
+
+}
+
+footer a {
+  color: white;
+  margin-top:  10px;
+  text-decoration: none;
+  
+}
+
+footer a:hover {
+  color: blue;
+}
+
+.section-set1 h1,
+.section-set1 h2 {
+  text-align: center; /* Center the text horizontally */
+}
+.section-set1 {
+  
+  background-color: #87CEFA
+}
+
+.section-set1 {
+  
+  font-family: 'Bebas Neue', sans-serif;
+
+  
+}
+
+.section-set1 h1 {
+  font-size: 100px;
+}
+
+.section-set1 {
+  margin: 0;
+  padding: 0; /* Add this line to remove padding as well */
+}
+
+
+.section-set1 img {
+  float: center;
+}
+
+
+.image-container {
+  display: flex; /* Use flexbox to arrange images in a row */
+  flex: 1;
+  justify-content: space-between; /* Create space between images */
+  margin: 0 15px; /* Add margin to the container to create space between it and the wall */
+}
+
+
+.Mountain {
+  padding-left: 10px;
+}
+
+hr {
+  border-color: black;
+  border-width: 3px;
+}
+
+.section-set1 {
+  text-align: center;
+}
+
+/* Style the Instagram and Twitter logos */
+.social-media img {
+  width: 30px; /* Adjust the size as needed */
+  vertical-align: middle; /* Align the logos vertically with text */
+  margin: 0 10px; /* Add spacing between logos and usernames */
+}
+
+/* Style the usernames */
+.social-media span {
+  font-weight: bold; 
+}
+
+.section-set2 {
+ background-color:  #87CEFA
+}
+
+.section-set2 {
+  
+  font-family: 'Bebas Neue', sans-serif;
+
+  
+}
+
+.section-set2 p {
+  margin-left: 20px
+}
+
+.bioContainer img  {
+  
+    border: 5px solid black;
+  
+  
+}
+
+.horizontalRule hr {
+
+  border-style: dashed groove none dotted;
+
+}
+
+
+.contactSection {
+  background-color: #87CEFA;
+}
+
+
+.bioContainer {
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+}
+
+.bioContainer img {
+margin-top: 30px;
+
+}
+
+.bioContainerText {
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+}
+
+.bioContainerText {
+  font-size: 20px;
+  color: black;
+}
+
+.top-section {
+  position: relative; /* The top section serves as a reference for absolute positioning */
+ 
+}
+
+.positioned-image {
+  position: absolute;
+}
+
+/* Adjust the position of Image-1 */
+.positioned-image[alt="Image-1"] {
+  top: 70px; /* Adjust the top value to specify the vertical position for Image-1 */
+  left: 870px; /* Adjust the left value to specify the horizontal position for Image-1 */
+}
+
+
+
+/* Adjust the position of Image-1 */
+.positioned-image[alt="Image-2"] {
+  top: 70px; /* Adjust the top value to specify the vertical position for Image-1 */
+  left: 465px; /* Adjust the left value to specify the horizontal position for Image-1 */
+}
+
+.about {
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 30px;
+}
+
+
+/* Card Layout */
+.three-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
+  gap: 20px; /* Space between cards */
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+}
+
+/* Image Styling */
+.card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Heading Styling */
+.card h2 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* List Styling */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.language-list,
+.experience-list,
+.skills-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.language-list li,
+.experience-list li,
+.skills-list li {
+  margin-bottom: 5px;
+}
+
+
+.language-list li,
+.experience-list dt,
+.skills-list dt {
+    font-size: 25px; /* Adjust the font size for list items as needed */
+}
+
+.card img {
+  width: 450px; /* Adjust the width as needed */
+  height: 440px; /* Adjust the height as needed */
+}
+
+.card {
+  background-color: white;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: #007bff; /* Change to your preferred color */
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Style the form container */
+.formFill {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    margin-top: 10px;
+    
+
+}
+
+
+.address {
+  text-align: center; /* Center-align the text within the div */
+}
+
+.address h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 30px;
+
+}
+
+.address p {
+ font-family:  Bradley Hand, cursive;
+}
+
+input[type="submit"]:hover {
+  background-color: #000; /* Change to black on hover */
+  color: white;
+}
+
+.one-col {
+  width: 100%;
+  max-width: 400px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+
+}
+
+
+
+body {
+  background-color: #87CEFA;
+}
+
+.contactSection hr {
+  border: 10px solid black;
+  border-radius: 5px;
+}
+
+
+.footerContact footer {
+  background-color: #87CEFA;
+}
